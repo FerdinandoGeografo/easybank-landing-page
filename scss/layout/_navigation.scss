@@ -1,0 +1,25 @@
+.navigation {
+    &__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            font-family: inherit;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            letter-spacing: -0.11px;
+            text-decoration: none;
+            color: var(--grey-100);
+        }
+
+        &:hover,
+        &:active {
+        }
+    }
+}

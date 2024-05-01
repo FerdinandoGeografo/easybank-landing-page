@@ -3,3 +3,27 @@ body {
     font-weight: 400;
     font-size: 1.8rem;
 }
+
+.heading-primary {
+    color: var(--blue-100);
+    font-size: 5.6rem;
+    font-weight: 300;
+    line-height: 6.4rem;
+    letter-spacing: -1px;
+}
+
+.heading-secondary {
+    color: var(--blue-100);
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 6.4rem;
+    letter-spacing: -0.71px;
+}
+
+.paragraph {
+    color: var(--grey-100);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    letter-spacing: -0.28px;
+}

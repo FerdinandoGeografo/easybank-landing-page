@@ -1,0 +1,14 @@
+.articles {
+    padding: 8rem 16.5rem;
+    background: #fafafa;
+
+    &__heading {
+        margin-bottom: 4rem;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        gap: 3rem;
+    }
+}
