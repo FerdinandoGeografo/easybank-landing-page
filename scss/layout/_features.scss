@@ -1,6 +1,9 @@
 .features {
     background: var(--grey-200);
-    padding: 9.6rem 16.5rem 9.4rem 16.5rem;
+
+    .container {
+        padding: 9.6rem 16.5rem 9.4rem 16.5rem;
+    }
 
     &__text-box {
         max-width: 63.5rem;

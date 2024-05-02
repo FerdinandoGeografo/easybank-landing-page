@@ -1,8 +1,11 @@
 .articles {
-    padding: 8rem 16.5rem;
-    background: #fafafa;
+    background: var(--white-200);
 
-    &__heading {
+    .container {
+        padding: 8rem 16.5rem;
+    }
+
+    .heading--secondary {
         margin-bottom: 4rem;
     }
 

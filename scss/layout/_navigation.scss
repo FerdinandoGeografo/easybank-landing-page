@@ -10,16 +10,34 @@
         &:link,
         &:visited {
             font-family: inherit;
-            font-weight: 400;
             font-size: 1.4rem;
             line-height: 1.6rem;
             letter-spacing: -0.11px;
             text-decoration: none;
             color: var(--grey-100);
+            transition: all 0.4s;
+            position: relative;
+
+            &::after {
+                content: "";
+                display: block;
+                height: 4px;
+                width: 100%;
+                background: var(--gradient);
+                position: absolute;
+                bottom: -3.05rem;
+                transform: scaleX(0);
+                transition: transform 0.4s;
+            }
         }
 
         &:hover,
         &:active {
+            color: var(--blue-100);
+
+            &::after {
+                transform: scaleX(1);
+            }
         }
     }
 }

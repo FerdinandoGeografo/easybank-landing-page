@@ -1,10 +1,11 @@
 .footer {
     background: var(--blue-100);
-    padding: 4.8rem 16.5rem;
 
     &__content {
+        padding: 4.8rem 16.5rem;
         display: grid;
         grid-template-columns: repeat(3, auto);
+        height: 19.1rem;
     }
 
     &__logo {
@@ -30,9 +31,8 @@
         &:link,
         &:visited {
             color: var(--white-100);
-            font-family: inherit;
             font-size: 1.5rem;
-            font-weight: 400;
+            font-weight: inherit;
             letter-spacing: -0.23px;
             line-height: 2.6rem;
             text-decoration: none;
@@ -45,7 +45,11 @@
         }
     }
 
-    .cta,
+    .cta {
+        align-self: start;
+        justify-self: end;
+    }
+
     &__copyright {
         align-self: end;
         justify-self: end;
@@ -60,6 +64,13 @@
     }
 
     &__icon {
+        path {
+            transition: fill 0.4s;
+        }
+
+        &:hover path {
+            fill: var(--green-100);
+        }
     }
 
     &__copyright {
@@ -67,7 +78,6 @@
         grid-column: 3 / 4;
         color: var(--grey-100);
         font-size: 1.5rem;
-        font-weight: 400;
         letter-spacing: -0.23px;
         line-height: 2.6rem;
     }

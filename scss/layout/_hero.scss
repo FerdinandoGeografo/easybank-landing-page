@@ -1,40 +1,32 @@
 .hero {
-    background: #fafafa;
-    padding: 17rem 0 17rem 16.5rem;
+    background: var(--white-200);
     position: relative;
-    overflow-x: hidden;
+    background-image: url(../../images//bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 88%;
+    background-position-y: -26rem;
+    background-position-x: 355%;
+
+    .container {
+        padding: 17rem 0 17rem 16.5rem;
+    }
+
+    &__img {
+        position: absolute;
+        display: block;
+        inset: -12.3rem -13rem 0 55.8%;
+    }
 
     &__text-box {
         max-width: 44.7rem;
         width: 100%;
 
-        .heading-primary {
+        .heading--primary {
             margin-bottom: 2.4rem;
         }
 
         .paragraph {
             margin-bottom: 3.6rem;
         }
-    }
-
-    &::before,
-    &::after {
-        content: "";
-        background-repeat: no-repeat;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
-
-    &::before {
-        background-image: url(../../images/bg-intro-desktop.svg);
-        top: -26rem;
-        left: 61rem;
-    }
-
-    &::after {
-        background-image: url(../../images/image-mockups.png);
-        top: -12rem;
-        left: 79.5rem;
     }
 }
