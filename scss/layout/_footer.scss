@@ -9,7 +9,6 @@
 
     &__logo {
         display: block;
-        filter: brightness(5);
     }
 
     &__links,
@@ -46,7 +45,15 @@
         }
     }
 
+    .cta,
+    &__copyright {
+        align-self: end;
+        justify-self: end;
+    }
+
     &__icons {
+        align-self: end;
+        max-height: 2rem;
         display: flex;
         align-items: center;
         gap: 1.3rem;
@@ -56,6 +63,7 @@
     }
 
     &__copyright {
+        margin-top: 0.1rem;
         grid-column: 3 / 4;
         color: var(--grey-100);
         font-size: 1.5rem;

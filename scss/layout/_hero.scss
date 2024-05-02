@@ -1,6 +1,8 @@
 .hero {
     background: #fafafa;
     padding: 17rem 0 17rem 16.5rem;
+    position: relative;
+    overflow-x: hidden;
 
     &__text-box {
         max-width: 44.7rem;
@@ -15,25 +17,24 @@
         }
     }
 
-    &::before {
+    &::before,
+    &::after {
         content: "";
-        background-image: url(../../images/bg-intro-desktop.svg);
-        background-size: 100%;
         background-repeat: no-repeat;
-        height: 100%;
-        width: 100%;
         position: absolute;
-        top: -18rem;
-        left: 64rem;
+        right: 0;
+        bottom: 0;
+    }
+
+    &::before {
+        background-image: url(../../images/bg-intro-desktop.svg);
+        top: -26rem;
+        left: 61rem;
     }
 
     &::after {
-        content: "";
         background-image: url(../../images/image-mockups.png);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        width: 76.7rem;
-        height: 93.9rem;
-        position: absolute;
+        top: -12rem;
+        left: 79.5rem;
     }
 }
