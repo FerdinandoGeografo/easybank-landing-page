@@ -12,11 +12,23 @@ body {
     &--primary {
         font-size: 5.6rem;
         letter-spacing: -1px;
+
+        @include respond(phone) {
+            font-size: 4rem;
+            letter-spacing: -0.71px;
+            line-height: 4.7rem;
+        }
     }
 
     &--secondary {
         font-size: 4rem;
         letter-spacing: -0.71px;
+
+        @include respond(phone) {
+            font-size: 3.2rem;
+            letter-spacing: -0.57px;
+            line-height: 3.8rem;
+        }
     }
 }
 
@@ -25,4 +37,10 @@ body {
     font-size: 1.8rem;
     line-height: 2.8rem;
     letter-spacing: -0.28px;
+
+    @include respond(phone) {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        letter-spacing: -0.23px;
+    }
 }

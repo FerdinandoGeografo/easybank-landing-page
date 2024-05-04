@@ -6,15 +6,30 @@
         display: grid;
         grid-template-columns: repeat(3, auto);
         height: 19.1rem;
+
+        @include respond(phone) {
+            padding: 4rem 7.75rem;
+            grid-template-columns: 1fr;
+            height: auto;
+            place-items: center;
+        }
     }
 
     &__logo {
         display: block;
+
+        @include respond(phone) {
+            margin-bottom: 3.2rem;
+        }
     }
 
     &__links,
     &__icons {
         list-style: none;
+
+        @include respond(phone) {
+            margin-bottom: 3.2rem;
+        }
     }
 
     &__links {
@@ -25,6 +40,13 @@
         grid-template-columns: repeat(2, 16rem);
         column-gap: 3rem;
         row-gap: 0.8rem;
+
+        @include respond(phone) {
+            place-items: center;
+            grid-column: unset;
+            grid-row: unset;
+            grid-template-columns: 1fr;
+        }
     }
 
     &__link {
@@ -48,11 +70,12 @@
     .cta {
         align-self: start;
         justify-self: end;
-    }
 
-    &__copyright {
-        align-self: end;
-        justify-self: end;
+        @include respond(phone) {
+            align-self: center;
+            justify-self: center;
+            margin-bottom: 2.4rem;
+        }
     }
 
     &__icons {
@@ -61,6 +84,13 @@
         display: flex;
         align-items: center;
         gap: 1.3rem;
+
+        @include respond(phone) {
+            grid-row: 2 / 3;
+            align-self: center;
+            max-height: 2.4rem;
+            gap: 1.6rem;
+        }
     }
 
     &__icon {
@@ -74,11 +104,20 @@
     }
 
     &__copyright {
+        align-self: end;
+        justify-self: end;
         margin-top: 0.1rem;
         grid-column: 3 / 4;
         color: var(--grey-100);
         font-size: 1.5rem;
         letter-spacing: -0.23px;
         line-height: 2.6rem;
+
+        @include respond(phone) {
+            align-self: center;
+            justify-self: center;
+            margin-top: 0;
+            grid-column: unset;
+        }
     }
 }
