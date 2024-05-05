@@ -1,15 +1,9 @@
 .article {
     background: var(--white-100);
-    max-width: 25.5rem;
-    width: 100%;
     overflow: hidden;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.4s;
-
-    @include respond(phone) {
-        max-width: 100%;
-    }
 
     &:hover {
         transform: translateY(-3px);

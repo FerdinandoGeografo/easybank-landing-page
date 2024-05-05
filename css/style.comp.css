@@ -66,15 +66,10 @@ body {
 
 .article {
   background: var(--white-100);
-  max-width: 25.5rem;
-  width: 100%;
   overflow: hidden;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.4s; }
-  @media only screen and (max-width: 37.5em) {
-    .article {
-      max-width: 100%; } }
   .article:hover {
     transform: translateY(-3px); }
     .article:hover .article__title {
@@ -194,7 +189,7 @@ body {
   z-index: 100; }
   @media only screen and (max-width: 77.5em) {
     .header {
-      padding: 1.8rem 6.4rem; } }
+      padding: 1.8rem 3.6rem; } }
   @media only screen and (max-width: 60em) {
     .header {
       padding: 2.2rem 2.4rem; } }
@@ -300,14 +295,23 @@ body {
     background: transparent; }
   .hero--mask::after {
     background: linear-gradient(to bottom, var(--blue-100), var(--blue-300)); }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 60em) {
     .hero {
       background-image: url(../../images/bg-intro-mobile.svg);
       background-size: 100%;
       background-position-x: 0;
+      background-position-y: -42rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .hero {
       background-position-y: -6.4rem; } }
   .hero .container {
     padding: 17rem 0 17rem 16.5rem; }
+    @media only screen and (max-width: 77.5em) {
+      .hero .container {
+        padding: 17rem 0 17rem 3.6rem; } }
+    @media only screen and (max-width: 60em) {
+      .hero .container {
+        padding: 17rem 2.4rem 8.8rem 2.4rem; } }
     @media only screen and (max-width: 37.5em) {
       .hero .container {
         padding: 32.2rem 2.4rem 8.8rem 2.4rem; } }
@@ -315,10 +319,15 @@ body {
     position: absolute;
     display: block;
     inset: -12.3rem -13rem 0 55.8%; }
+    @media only screen and (max-width: 60em) {
+      .hero__img {
+        width: 40%;
+        inset: unset;
+        top: -8rem;
+        left: 58%; } }
     @media only screen and (max-width: 37.5em) {
       .hero__img {
         width: 92%;
-        inset: unset;
         top: -12.2rem;
         left: 1.5rem; } }
   .hero__text-box {
@@ -326,6 +335,7 @@ body {
     width: 100%; }
     @media only screen and (max-width: 37.5em) {
       .hero__text-box {
+        margin-inline: auto;
         text-align: center; } }
     .hero__text-box .heading--primary {
       margin-bottom: 2.4rem; }
@@ -344,10 +354,7 @@ body {
     padding: 9.6rem 16.5rem 9.4rem 16.5rem; }
     @media only screen and (max-width: 77.5em) {
       .features .container {
-        padding: 9.6rem 6.4rem 9.4rem 6.4rem; } }
-    @media only screen and (max-width: 60em) {
-      .features .container {
-        padding: 6.4rem 4.8rem; } }
+        padding: 6.4rem 3.6rem; } }
     @media only screen and (max-width: 37.5em) {
       .features .container {
         padding: 6.4rem 2.4rem; } }
@@ -364,11 +371,11 @@ body {
         margin-bottom: 5.6rem;
         text-align: center; } }
   .features__content {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25.5rem, 1fr));
     gap: 3rem; }
     @media only screen and (max-width: 37.5em) {
       .features__content {
-        flex-direction: column;
         gap: 3.2rem; } }
 
 .articles {
@@ -377,10 +384,7 @@ body {
     padding: 8rem 16.5rem; }
     @media only screen and (max-width: 77.5em) {
       .articles .container {
-        padding: 8rem 6.4rem; } }
-    @media only screen and (max-width: 60em) {
-      .articles .container {
-        padding: 8rem 4.8rem; } }
+        padding: 8rem 3.6rem; } }
     @media only screen and (max-width: 37.5em) {
       .articles .container {
         padding: 8.8rem 2.4rem;
@@ -392,15 +396,12 @@ body {
         margin-bottom: 3.1rem; } }
   .articles__list {
     list-style: none;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25.5rem, 1fr));
     gap: 3rem; }
     @media only screen and (max-width: 77.5em) {
       .articles__list {
-        flex-wrap: wrap;
         gap: 2.4rem; } }
-    @media only screen and (max-width: 60em) {
-      .articles__list {
-        flex-direction: column; } }
 
 .footer {
   background: var(--blue-100); }

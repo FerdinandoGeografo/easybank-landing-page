@@ -19,15 +19,27 @@
         background: linear-gradient(to bottom, var(--blue-100), var(--blue-300));
     }
 
-    @include respond(phone) {
+    @include respond(tab-port) {
         background-image: url(../../images/bg-intro-mobile.svg);
         background-size: 100%;
         background-position-x: 0;
+        background-position-y: -42rem;
+    }
+
+    @include respond(phone) {
         background-position-y: -6.4rem;
     }
 
     .container {
         padding: 17rem 0 17rem 16.5rem;
+
+        @include respond(tab-land) {
+            padding: 17rem 0 17rem 3.6rem;
+        }
+
+        @include respond(tab-port) {
+            padding: 17rem 2.4rem 8.8rem 2.4rem;
+        }
 
         @include respond(phone) {
             padding: 32.2rem 2.4rem 8.8rem 2.4rem;
@@ -39,9 +51,15 @@
         display: block;
         inset: -12.3rem -13rem 0 55.8%;
 
+        @include respond(tab-port) {
+            width: 40%;
+            inset: unset;
+            top: -8rem;
+            left: 58%;
+        }
+
         @include respond(phone) {
             width: 92%;
-            inset: unset;
             top: -12.2rem;
             left: 1.5rem;
         }
@@ -52,6 +70,7 @@
         width: 100%;
 
         @include respond(phone) {
+            margin-inline: auto;
             text-align: center;
         }
 
