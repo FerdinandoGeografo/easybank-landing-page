@@ -7,7 +7,12 @@
         grid-template-columns: repeat(3, auto);
         height: 19.1rem;
 
-        @include respond(phone) {
+        @include respond(tab-land) {
+            padding: 4.8rem 6.4rem;
+            column-gap: 1.6rem;
+        }
+
+        @include respond(tab-port) {
             padding: 4rem 7.75rem;
             grid-template-columns: 1fr;
             height: auto;
@@ -18,7 +23,7 @@
     &__logo {
         display: block;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             margin-bottom: 3.2rem;
         }
     }
@@ -27,7 +32,7 @@
     &__icons {
         list-style: none;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             margin-bottom: 3.2rem;
         }
     }
@@ -41,7 +46,7 @@
         column-gap: 3rem;
         row-gap: 0.8rem;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             place-items: center;
             grid-column: unset;
             grid-row: unset;
@@ -71,7 +76,7 @@
         align-self: start;
         justify-self: end;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             align-self: center;
             justify-self: center;
             margin-bottom: 2.4rem;
@@ -85,7 +90,7 @@
         align-items: center;
         gap: 1.3rem;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             grid-row: 2 / 3;
             align-self: center;
             max-height: 2.4rem;
@@ -113,7 +118,7 @@
         letter-spacing: -0.23px;
         line-height: 2.6rem;
 
-        @include respond(phone) {
+        @include respond(tab-port) {
             align-self: center;
             justify-self: center;
             margin-top: 0;

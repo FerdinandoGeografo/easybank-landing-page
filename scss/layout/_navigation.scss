@@ -12,15 +12,23 @@
         top: 8.8rem;
         border-radius: 4px;
         padding: 3.2rem 0;
-        transition: all 0.4s;
+        transform: translateY(-100%);
+        transition: all 0.5s;
 
         &__open {
             opacity: 1;
             pointer-events: auto;
             visibility: visible;
+            transform: translateY(0);
 
             + .navigation__mobile-btn {
-                opacity: 0.5;
+                #open {
+                    display: none;
+                }
+
+                #close {
+                    display: block;
+                }
             }
         }
     }
@@ -90,6 +98,10 @@
         cursor: pointer;
         transition: all 0.4s;
         display: none;
+
+        #close {
+            display: none;
+        }
 
         @include respond(phone) {
             display: block;
