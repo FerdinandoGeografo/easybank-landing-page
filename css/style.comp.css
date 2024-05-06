@@ -358,7 +358,7 @@ body {
 .features {
   background: var(--grey-200); }
   .features .container {
-    padding: 9.6rem 16.5rem 9.4rem 16.5rem; }
+    padding: 9.6rem 16.5rem 10.2rem 16.5rem; }
     @media only screen and (max-width: 77.5em) {
       .features .container {
         padding: 6.4rem 3.6rem; } }
