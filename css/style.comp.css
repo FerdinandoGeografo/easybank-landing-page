@@ -172,7 +172,7 @@ body {
     color: var(--grey-100);
     font-size: 1.6rem;
     letter-spacing: -0.25px;
-    line-height: 2.8rem; }
+    line-height: 2.6rem; }
     @media only screen and (max-width: 37.5em) {
       .feature__description {
         font-size: 1.5rem;
