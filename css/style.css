@@ -292,9 +292,11 @@ body {
     position: absolute;
     inset: 0;
     transition: all 0.4s;
-    background: transparent; }
+    background: transparent;
+    z-index: -1; }
   .hero--mask::after {
-    background: linear-gradient(to bottom, var(--blue-100), var(--blue-300)); }
+    background: linear-gradient(to bottom, var(--blue-100), var(--blue-300));
+    z-index: 1; }
   @media only screen and (max-width: 60em) {
     .hero {
       background-image: url(../../images/bg-intro-mobile.svg);
