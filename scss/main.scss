@@ -1,17 +1,17 @@
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@use "abstracts/mixins";
+@use "abstracts/variables";
 
-@import "base/base";
-@import "base/typography";
+@use "base/base";
+@use "base/typography";
 
-@import "components/article";
-@import "components/container";
-@import "components/cta";
-@import "components/feature";
+@use "components/article";
+@use "components/container";
+@use "components/cta";
+@use "components/feature";
 
-@import "layout/header";
-@import "layout/navigation";
-@import "layout/hero";
-@import "layout/features";
-@import "layout/articles";
-@import "layout/footer";
+@use "layout/header";
+@use "layout/navigation";
+@use "layout/hero";
+@use "layout/features";
+@use "layout/articles";
+@use "layout/footer";
